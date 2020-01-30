@@ -1,0 +1,275 @@
+/* GENERALES */
+* {font-family: sans-serif;}
+:root {
+    --azul-claro: #94CDD6;
+    --azul-oscuro: #1A5B6D;
+}
+body{
+    width:100%;
+    margin:0;
+}
+h1, h2, h3, a {
+    color: var(--azul-claro);
+    text-align: center;
+}
+img {
+    width: 100%;
+}
+li {
+    display: inline;
+    margin-right: 5%;
+}
+li :hover{
+    color: white;
+}
+/* HEADER-NAV */
+header {
+    background-color: var(--azul-oscuro);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo {
+    width: 12%;
+    padding-left: 5%;
+}
+
+.tittle{
+    width: inherit;
+}
+.tittle h1 {
+    font-size: inherit;
+}
+nav {
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+} 
+/* PRESENTATION */
+.iframe {
+    display: none;
+}
+.logo2{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+.logo2 img{
+    width: 120px;
+    box-shadow: 0 2px 6px black;
+    border-radius: 50%;
+}
+/* MAIN */
+.parteMedia, .parteMedia2 {
+    margin-left:10%;
+    margin-right: 10%;
+}
+.location{
+    margin: 0;
+}
+/*Section .floor*/
+ol li{
+    display: block;
+}
+
+/* FORMULARIO*/
+form{
+    width:100%;
+    margin: auto;
+}
+form label{
+    display: block;
+}
+label, input, textarea{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.phone-email-contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.phoneContenedor, .emailContenedor{
+    width: 50%;
+}
+.emailContenedor{
+    margin-left: 20px;
+}
+.input, .textarea{
+    width: 100%;
+    padding: 5px;
+}
+.submit{
+    display: block;
+    width: fit-content;
+    background-color: var(--azul-oscuro);
+    color: var(--azul-claro);
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.submit:hover{
+    background-color: var(--azul-claro);
+    color: var(--azul-oscuro);
+}
+
+/* FOOTER */
+footer {
+    background-color:var(--azul-oscuro);
+    padding: 1%;
+    text-align: center;
+}
+.rrss {
+    color:var(--azul-claro); 
+}
+.seguridad li {
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+/* .  TAMAÑOS MEDIANOS . */
+@media screen and (min-width: 600px) {
+    * {font-family: 'Miriam Libre', sans-serif;}
+    
+    .presentation img {
+        width: 100%;
+    }
+    .parteMedia{
+        margin-top: 5%;
+    }
+    .logo2 {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+    .column1, .column2 {
+        width: 50%;
+        margin-left: 5%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+    .img, .parrafo {
+        width: 50%;
+        margin-left: 5%;
+    }
+    
+}
+
+/* .  TAMAÑOS GRANDES . */
+@media screen and (min-width: 1000px) {
+    * {
+        font-family: 'Miriam Libre', sans-serif;
+    }
+    .logo{
+        width: 8%;
+    }
+    .tittle h1 {
+        font-size: x-large;
+    }
+    .presentation img{
+        display: none;
+    }
+    .iframe{
+        display: block;
+    }
+    .logo2{
+        display: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .articleRow{
+        display: flex;
+        flex-direction: row;
+    }
+    .parteMedia, .parteMedia2{
+        max-width: 1400px;
+        margin: auto;
+        padding: auto;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .aboutTesla img, .aboutTesla a{
+        display: none;
+    }
+    .collection .column1, .collection .column2{
+        width: 86%;
+    }
+    .column1, .column2{
+        width: 100%;
+    }
+    .replicas{
+        margin-right:2%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .floor{
+        width: 77%;
+    }
+    .tour{
+        width: 100%;
+    }
+    .publications{
+        width: 100%;
+    }
+    .divRow{
+        display: flex;
+        flex-direction: row;
+    }
+    .row{
+        flex-direction: column;
+        padding-left:3%;
+        padding-right:3%;
+    }
+    .img, .parrafo {
+        width: 100%;
+    }
+    .finalFlex{
+        display: flex;
+        flex-direction: row;
+    }
+    .finalFlex section{
+        width: 50%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    
+}
